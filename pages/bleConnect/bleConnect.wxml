@@ -1,0 +1,22 @@
+<view style="margin: 20rpx 0rpx 0rpx 40rpx;">
+  <text style="font-size: 30rpx;">Bluetooth Connection</text>
+</view>
+<view style="margin: 20rpx 0rpx 0rpx 40rpx;">
+  <text style="font-size: 40rpx;">添加像素时钟蓝牙设备</text>
+</view>
+<view class="box">
+  <button type="primary" bindtap="startScan">搜索设备</button>
+  <button bindtap="stopConnect">断开连接</button>
+</view>
+
+<view class="cu-bar bg-white">
+  <view class="connect_device">当前已连接到的设备：{{connectName}}</view>
+</view>
+
+<scroll-view scroll-y style="height: 900rpx; margin-top: 40rpx;">
+  <button wx:for="{{devices}}" wx:key="index" bindtap="startConnect" data-id="{{item.deviceId}}" data-name="{{item.name}}" class="device_item" hover-class="device_item_hover" style="margin-top: 20rpx;">
+    <view style="font-size: 30rpx; font-weight:700 !important;color: #333;text-align:left">{{item.name}}</view>
+    <view style="font-size: 20rpx;text-align:left">信号强度: {{item.RSSI}}dBm ({{utils.max(0, item.RSSI + 100)}}%)</view>
+    <view style="font-size: 20rpx; text-align:left">UUID: {{item.deviceId}}</view>
+  </button>
+</scroll-view>

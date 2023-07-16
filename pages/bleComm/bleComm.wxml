@@ -1,0 +1,16 @@
+<!--pages/bleComm/bleComm.wxml-->
+<view style="display: flex;justify-content: center; align-items: center; margin-top: 30rpx;">
+  <view><text style="margin-top: 10rpx;">Wi-Fi 账号</text></view>
+  <view>
+    <input bindinput='getWifiName' value="{{wifi_name}}" type='text' placeholder='Wi-Fi name' style="width: 500rpx;"></input>
+  </view>
+</view>
+<view style="display: flex;justify-content: center; align-items: center;">
+  <view><text style="margin-top: 10rpx;">Wi-Fi 密码</text></view>
+  <input  bindinput='getWifiPassword' value="{{wifi_password}}" type='text' placeholder='Wi-Fi password' style="width: 500rpx;">
+  </input>
+</view>
+<view class="conn_wifi_button">
+  <button type="primary" size="mini" loading="{{not_recv_wifi_status}}" bindtap="BLEWriteWifi"> 连接Wi-Fi
+  </button>
+</view>

@@ -1,0 +1,58 @@
+/* pages/main/main.wxss */
+.text1{
+  display: flex;
+  justify-content: center;
+  font-size: 35rpx;
+  margin-top: 40rpx;
+  margin-bottom: 30rpx;
+  padding: 10rpx 0 10rpx 0;
+  background-color: #b4b2b291;
+  font-size: 40rpx !important;
+  font-weight: 700;
+}
+
+.ble_image{
+  vertical-align:middle;
+  padding-left: 40rpx;
+}
+.ble_conn{
+  margin-left: 105rpx;
+  margin-top: 30rpx;
+  width: 540rpx !important;
+  font-size: 37rpx !important;
+}
+.ble_font {
+  vertical-align:middle;
+  padding-left: 15rpx;
+  font-weight: 600;
+  font-size: 35rpx;
+}
+.ble_info{
+  font-size: 30rpx;
+  padding-left: 105rpx;
+}
+.wifi_image{
+  vertical-align:middle;
+  padding-left: 45rpx;
+}
+.wifi_font{
+  vertical-align:middle;
+  padding-left: 15rpx;
+  font-weight: 600;
+  font-size: 35rpx;
+}
+.wifi_info{
+  font-size: 30rpx;
+  padding-left: 105rpx;
+}
+.wifi_conn{
+  margin-left: 105rpx;
+  margin-top: 20rpx;
+  width: 540rpx !important;
+}
+.wifi_remainder{
+  display: flex;
+  font-size: 30rpx;
+  margin-top: 10rpx;
+  justify-content: center;
+}

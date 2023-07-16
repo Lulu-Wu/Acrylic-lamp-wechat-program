@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/main/main",
+    "pages/bleConnect/bleConnect",
+    "pages/bleComm/bleComm",
+    "pages/mode/mode"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Acrylic Lamp",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#8c8c8c",
+    "selectedColor": "#25B195",
+    "backgroundColor": "#F5F5F5",
+    
+    "list": [{
+      "pagePath": "pages/main/main",
+      "text": "网络",
+      "iconPath":"images/network_1.png",
+      "selectedIconPath":"images/network.png"
+    }, 
+    {
+      "pagePath": "pages/mode/mode",      
+      "text": "模式",
+      "iconPath":"images/mode_bar_1.png",
+      "selectedIconPath":"images/mode_bar.png"
+    }
+    ],
+    "position": "bottom"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

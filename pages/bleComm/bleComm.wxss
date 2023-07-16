@@ -1,0 +1,13 @@
+input{
+  margin: 20rpx;
+  padding-left: 10rpx;
+  height: 80rpx;
+  border: 1rpx solid #c3c3c3;
+}
+
+.conn_wifi_button{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,11 @@
+<view>
+  <text class="text1">Choose one display mode</text>
+</view>
+
+<view class=".box1"> 
+  <button wx:for="{{modeList}}" wx:key="*this" data-index="{{index}}" class="{{item.checked ? 'active' : ''}}" bindtap="modeSwitch">{{item.modeName}}
+  </button>
+</view>
+
+
+

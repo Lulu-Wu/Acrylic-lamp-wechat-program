@@ -1,0 +1,28 @@
+<!--pages/main/main.wxml-->
+<view>
+  <text class="text1">BLE & WiFi Demo</text>
+</view>
+<view style="margin-top: 80rpx;">
+  <image class="ble_image" src="/images/bluetooth.png" mode="widthFix" style="width:50rpx;"></image>
+  <text class="ble_font">蓝牙：{{ble_connect_status}}</text>
+  <view style="margin-top: 20rpx;">
+    <text class="ble_info">已连接蓝牙名称：{{ble_connect_device}}</text>
+  </view>
+  <view>
+    <button class="ble_conn" size="mini" type="primary" bindtap="jumpToBLEConnPage">设置蓝牙</button>
+  </view>
+</view>
+<view style="margin-top: 60rpx;">
+  <image class="wifi_image" src="/images/wifi.png" mode="widthFix" style="width:50rpx;"></image>
+  <text class="wifi_font">Wi-Fi：{{wifi_connect_status}}</text>
+  <view style="margin-top: 20rpx;">
+    <text class="wifi_info">已连接Wi-Fi名称：{{has_conn_wifi_name}}</text>
+  </view>
+  <view>
+    <button class="wifi_conn" size="mini" type="primary" disabled="{{ble_hasnot_conn}}" bindtap="jumpToBLECommPage">设置Wi-Fi</button>
+  </view>
+  <view>
+    <text wx:if="{{ble_connect_status != '已连接'}}" class="wifi_remainder">请先连接蓝牙后再连接Wi-Fi</text>
+    <text wx:if="{{ble_connect_status == '已连接' && has_conn_wifi_name != '未连接Wi-Fi'}}" class="wifi_remainder">设备已连接Wi-Fi, 不用再进行设置</text>
+  </view>
+</view>
